@@ -7,7 +7,7 @@ color: coral;
 font-family: fantasy;
 }
 ul {
-list-style-type: circle;
+list-style-image: url('images/pointer-icon.png');
 }
 ol{
 list-style-type: upper-roman;
