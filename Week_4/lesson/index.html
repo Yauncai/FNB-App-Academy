@@ -4,7 +4,17 @@
    <link rel="stylesheet" href="style.css">
 </head>
 <body> 
-      <div id="scope-demo"></div>
-<script src="script.js"></script>
+   <div id="weather-demo">
+        <label for="weather">What's the weather like today?</label>
+        <select id="weather" onchange="showWeatherQuote()">
+            <option value="">--Select--</option>
+            <option value="sunny">Sunny</option>
+            <option value="rainy">Rainy</option>
+            <option value="cloudy">Cloudy</option>
+            <option value="windy">Windy</option>
+            <option value="snowy">Snowy</option>
+        </select>
+        <p id="weather-quote"></p>
+    </div><script src="script.js"></script>
 </body>
 </html>

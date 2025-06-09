@@ -1,0 +1,38 @@
+body {
+    background: #2e003e; /* rich, deep purple */
+    color: #f9ffb6;      /* soft yellow for contrast */
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#weather-demo {
+    background: rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 32px 24px;
+    max-width: 350px;
+    margin: 100px auto;
+    box-shadow: 0 4px 24px rgba(46,0,62,0.2);
+    text-align: center;
+}
+
+label, select, p {
+    font-size: 1.1em;
+    color: #f9ffb6;
+}
+
+select {
+    background: #4b145b;
+    color: #f9ffb6;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#weather-quote {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #ffe156;
+}
