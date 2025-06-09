@@ -1,3 +1,8 @@
 function changeText() {
-    document.getElementById("myHeading").innerHTML = "is awesome";
+    var heading = document.getElementById("heading");
+    if (heading.innerHTML === "JavaScript") {
+        heading.innerHTML = "is awesome";
+    } else {
+        heading.innerHTML = "JavaScript";
+    }
 }
