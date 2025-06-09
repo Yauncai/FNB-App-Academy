@@ -1,4 +1,7 @@
-var numA = 7;
-var numB = 10;
-document.getElementById(“heading1”).innerHTML = (text1);
-document.getElementById(“paragraph2”).innerHTML = (numA + “ x ” + numB + “ = ” numA * numB );
+var userInputPassword = "008";
+var actualPassword = "007";
+if(userInputPassword == actualPassword){
+document.getElementById("output").innerHTML = ("Correct password");
+}else{
+document.getElementById("output").innerHTML = ("Incorrect password. Try again");
+}
