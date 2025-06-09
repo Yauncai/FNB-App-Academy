@@ -7,9 +7,9 @@ function changeText() {
     }
 }
 
-function addNumbers(num1, num2) {
-    document.getElementById("addition").innerHTML = num1 + num2;
+function subNumbers(num1, num2) {
+    return num1 - num2;
 }
 
 // usage
-addNumbers(10, 7);
+document.getElementById("subtraction").innerHTML = subNumbers(10, 7);
