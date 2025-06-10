@@ -31,6 +31,35 @@ operatorButtons.forEach(button => {
     });
 });
 
+// Equals button handler
+document.getElementById('equals').addEventListener('click', function() {
+    if (firstOperand !== null && operator !== null) {
+        const secondOperand = parseFloat(display.innerText);
+        let result;
+        switch (operator) {
+            case '+':
+                result = firstOperand + secondOperand;
+                break;
+            case '−':
+                result = firstOperand - secondOperand;
+                break;
+            case '×':
+                result = firstOperand * secondOperand;
+                break;
+            case '÷':
+                result = secondOperand !== 0 ? firstOperand / secondOperand : 'Error';
+                break;
+            default:
+                result = secondOperand;
+        }
+        display.innerText = result;
+        // Reset for next calculation
+        firstOperand = null;
+        operator = null;
+        waitingForSecondOperand = false;
+    }
+});
+
 // AC button event handler
 document.getElementById('ac').addEventListener('click', function() {
     display.innerText = '0';
