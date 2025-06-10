@@ -3,6 +3,7 @@ const buttons = document.querySelectorAll('.btn.number, #decimal');
 
 buttons.forEach(button => {
     button.addEventListener('click', function() {
+        
         if (display.innerText === '0') {
             display.innerText = button.innerText;
         } else {
@@ -11,7 +12,7 @@ buttons.forEach(button => {
     });
 });
 
-
+// AC button clears 
 document.getElementById('ac').addEventListener('click', function() {
     display.innerText = '0';
 });
